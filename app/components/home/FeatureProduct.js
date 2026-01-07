@@ -7,12 +7,7 @@ const products = async () => {
   const random = Math.floor(Math.random() * 99) + 1;
   try {
     const res = await fetch(
-      `https://dummyjson.com/products?limit=4&skip=${random}`,
-      {
-        method: "GET",
-        cache: "no-store",
-      }
-    );
+      `https://dummyjson.com/products?limit=4&skip=${random}`);
     return await res.json();
   } catch (error) {
     console.log(error);
