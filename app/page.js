@@ -7,6 +7,8 @@ import WhyChooseUs from "./components/home/WhyChooseUs";
 import BestSellerProduct from "./components/home/BestSellertProduct";
 import Blog from "./components/home/Blog";
 
+export const dynamic = "force-dynamic";
+
 export default function Home() {
   return (
    <>
